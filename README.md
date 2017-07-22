@@ -187,6 +187,7 @@ get("/create_photo", { :controller => "pictures", :action => "create_row" })
 
 # READ
 get("/photos", { :controller => "pictures", :action => "index" })
+
 get("/photos/:an_id", { :controller => "pictures", :action => "show" })
 
 # UPDATE
@@ -377,6 +378,7 @@ Finally, the last route will be triggered:
 
 ```ruby
 get("/update_photo/:the_id", { :controller => "pictures", :action => "update_row" })
+
 ```
 
 The job of this action is to receive data from an edit form, retrieve the corresponding row from the table, and update it with the revised information. Give it a shot.

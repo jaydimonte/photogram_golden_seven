@@ -39,8 +39,8 @@ class PicturesController < ApplicationController
     p.caption = params[:the_caption]
 
     p.save
-
-    redirect_to("/photos/#{p.id}")
+    render("/photos")
+   # redirect_to("/photos/#{p.id}")
   end
 
   def destroy_row
